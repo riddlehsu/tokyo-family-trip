@@ -184,12 +184,12 @@
         <section id="sec-plan" class="section-content active">
             
             <div class="day-tab-container no-scrollbar">
-                <button class="day-tab-btn active" onclick="switchDay('day1')">10/9 (五)</button>
-                <button class="day-tab-btn" onclick="switchDay('day2')">10/10 (六)</button>
-                <button class="day-tab-btn" onclick="switchDay('day3')">10/11 (日)</button>
-                <button class="day-tab-btn" onclick="switchDay('day4')">10/12 (一)</button>
-                <button class="day-tab-btn" onclick="switchDay('day5')">10/13 (二)</button>
-                <button class="day-tab-btn" onclick="switchDay('day6')">10/14 (三)</button>
+                <button class="day-tab-btn active" onclick="switchDay('day1', this)">Day1 10/9 (五)</button>
+                <button class="day-tab-btn" onclick="switchDay('day2', this)">Day2 10/10 (六)</button>
+                <button class="day-tab-btn" onclick="switchDay('day3', this)">Day3 10/11 (日)</button>
+                <button class="day-tab-btn" onclick="switchDay('day4', this)">Day4 10/12 (一)</button>
+                <button class="day-tab-btn" onclick="switchDay('day5', this)">Day5 10/13 (二)</button>
+                <button class="day-tab-btn" onclick="switchDay('day6', this)">Day6 10/14 (三)</button>
             </div>
 
             <div class="px-5 py-4">
@@ -214,7 +214,7 @@
                             <i class="fa-solid fa-hotel card-icon"></i>
                             <h2 class="text-md font-bold">KOKO HOTEL 淺草入住</h2>
                         </div>
-                        <p class="text-sm text-gray-600 mt-2">辦理入住，安頓路路。房內附帶完整廚房與洗脫烘設備。</p>
+                        <p class="text-sm text-gray-600 mt-2">辦理入住，安頓休息。房內附帶完整廚房與洗脫烘設備。</p>
                         <a href="https://maps.google.com/?q=KOKO+HOTEL+Residence+Asakusa+Kappabashi" target="_blank" class="btn-map"><i class="fa-solid fa-map-location-dot"></i> 飯店導航</a>
                     </div>
 
@@ -248,6 +248,7 @@
                             <span class="highlight-tag tag-buy"><i class="fa-solid fa-gift"></i> 伴手禮：人形燒</span>
                             <p class="text-sm text-gray-600">趁早上 9 點前人潮湧入前去漫步拍照。</p>
                         </div>
+                        <a href="https://maps.app.goo.gl/Kaminarimon" target="_blank" class="btn-map"><i class="fa-solid fa-map-location-dot"></i> 雷門導航</a>
                     </div>
 
                     <div class="card transport">
@@ -320,6 +321,7 @@
                             <span class="highlight-tag tag-alert"><i class="fa-solid fa-clock"></i> 務必提早進站</span>
                             <p class="text-sm text-gray-600">從新宿直達河口湖。大行李建議昨日先透過黑貓寄至 Day 5 的東京飯店，只帶輕便過夜包出發。</p>
                         </div>
+                        <a href="https://maps.google.com/?q=Kawaguchiko+Station" target="_blank" class="btn-map"><i class="fa-solid fa-map-location-dot"></i> 車站導航</a>
                     </div>
                     
                     <div class="card attraction">
@@ -340,8 +342,8 @@
                         <div class="mt-2">
                             <span class="highlight-tag tag-eat"><i class="fa-solid fa-bowl-food"></i> 必點：餺飥麵</span>
                             <p class="text-sm text-gray-600">河口湖著名鄉土料理，熱騰騰的手工麵。</p>
-                            <a href="https://www.google.com/maps/search/?api=1&query=Hotokura+Funari+Kawaguchiko" target="_blank" class="btn-map"><i class="fa-solid fa-map-location-dot"></i> 導航至餐廳</a>
                         </div>
+                        <a href="https://www.google.com/maps/search/?api=1&query=Hotokura+Funari+Kawaguchiko" target="_blank" class="btn-map"><i class="fa-solid fa-map-location-dot"></i> 導航至餐廳</a>
                     </div>
 
                     <div class="card accommodation">
@@ -362,21 +364,16 @@
                     </div>
 
                     <div class="card attraction">
-                        <span class="card-time">上午</span>
+                        <span class="card-time">白天</span>
                         <div class="flex items-center mb-2">
                             <i class="fa-solid fa-camera-retro card-icon"></i>
-                            <h2 class="text-md font-bold">淺間神社與新倉山</h2>
+                            <h2 class="text-md font-bold">大石公園 & Hanaterras</h2>
                         </div>
-                        <p class="text-sm text-gray-600 mt-2">參拜北口本宮富士淺間神社。接著前往新倉山淺間公園拍攝忠靈塔與富士山同框絕景 (可走緩坡)。</p>
-                    </div>
-
-                    <div class="card attraction">
-                        <span class="card-time">下午</span>
-                        <div class="flex items-center mb-2">
-                            <i class="fa-solid fa-camera-retro card-icon"></i>
-                            <h2 class="text-md font-bold">御殿場 Premium Outlets</h2>
+                        <div class="mt-2">
+                            <span class="highlight-tag tag-eat"><i class="fa-solid fa-utensils"></i> 必吃美食：葡萄百匯</span>
+                            <p class="text-sm text-gray-600">10月必看紅通通的掃帚草 (Kokia)。歐式庭園極度適合推車散步與拍照。</p>
                         </div>
-                        <p class="text-sm text-gray-600 mt-2">佔地廣大的購物天堂，推車友善。可以一邊看著富士山一邊輕鬆逛街。</p>
+                        <a href="https://maps.google.com/?q=Oishi+Park" target="_blank" class="btn-map"><i class="fa-solid fa-map-location-dot"></i> 導航至大石公園</a>
                     </div>
 
                     <div class="card accommodation">
@@ -385,14 +382,14 @@
                             <i class="fa-solid fa-hotel card-icon"></i>
                             <h2 class="text-md font-bold">換宿：秀峰閣 湖月</h2>
                         </div>
-                        <p class="text-sm text-gray-600 mt-2">擁有無遮蔽的絕佳露天風呂，傍晚可在足湯區喝免費啤酒賞日落。享用飯店精緻懷石料理。</p>
+                        <p class="text-sm text-gray-600 mt-2">距離大石公園車程僅2分鐘。擁有無遮蔽的絕佳露天風呂，傍晚可在足湯區喝免費啤酒賞日落。享用飯店精緻懷石料理。</p>
                         <a href="https://maps.google.com/?q=Shuhoukaku+Kogetsu" target="_blank" class="btn-map"><i class="fa-solid fa-map-location-dot"></i> 飯店導航</a>
                     </div>
                 </div>
 
                 <div id="day5" class="day-content">
                     <div class="weather-box">
-                        <span><i class="fa-solid fa-train text-gray-500 mr-2"></i>河口湖 ➔ 東京 (19°C - 23°C)</span>
+                        <span><i class="fa-solid fa-cloud-sun text-amber-500 mr-2"></i>河口湖 ➔ 東京 (19°C - 23°C)</span>
                         <span>返回市區自煮火鍋</span>
                     </div>
                     
@@ -423,8 +420,8 @@
                         <div class="mt-2">
                             <span class="highlight-tag tag-buy"><i class="fa-solid fa-gift"></i> 必買：重盛人形燒</span>
                             <p class="text-sm text-gray-600">水天宮參拜，體驗復古下町風情。</p>
-                            <a href="https://maps.google.com/?q=Suitengu+Shrine" target="_blank" class="btn-map"><i class="fa-solid fa-map-location-dot"></i> 導航至水天宮</a>
                         </div>
+                        <a href="https://maps.google.com/?q=Suitengu+Shrine" target="_blank" class="btn-map"><i class="fa-solid fa-map-location-dot"></i> 導航至水天宮</a>
                     </div>
 
                     <div class="card accommodation">
@@ -436,14 +433,14 @@
                         <div class="mt-2">
                             <span class="highlight-tag tag-eat"><i class="fa-solid fa-cart-shopping"></i> Life超市：黑毛和牛/豬肉片</span>
                             <p class="text-sm text-gray-600">入住 MIMARU SUITES，利用完整大廚房，全家人輕鬆享受日式火鍋/壽喜燒，領回先前寄送的大行李。</p>
-                            <a href="https://maps.google.com/?q=MIMARU+SUITES+Tokyo+Nihombashi" target="_blank" class="btn-map"><i class="fa-solid fa-map-location-dot"></i> 導航至MIMARU</a>
                         </div>
+                        <a href="https://maps.google.com/?q=MIMARU+SUITES+Tokyo+Nihombashi" target="_blank" class="btn-map"><i class="fa-solid fa-map-location-dot"></i> 導航至MIMARU</a>
                     </div>
                 </div>
 
                 <div id="day6" class="day-content">
                     <div class="weather-box">
-                        <span><i class="fa-solid fa-plane-departure text-blue-500 mr-2"></i>東京市區 (18°C - 24°C)</span>
+                        <span><i class="fa-solid fa-sun text-orange-400 mr-2"></i>東京市區 (18°C - 24°C)</span>
                         <span>快樂賦歸</span>
                     </div>
 
@@ -592,7 +589,7 @@
         }
 
         // --- PLAN 內部日期導航邏輯 ---
-        function switchDay(dayId) {
+        function switchDay(dayId, btnElement) {
             document.querySelectorAll('.day-content').forEach(el => el.classList.remove('active'));
             document.getElementById(dayId).classList.add('active');
             
@@ -600,9 +597,9 @@
             document.querySelectorAll('.day-tab-btn').forEach(btn => {
                 btn.classList.remove('active');
             });
-            event.currentTarget.classList.add('active');
+            btnElement.classList.add('active');
             
-            // 點擊日期後，讓畫面自動捲動至行程頂部 (避免被 Header 蓋住)
+            // 點擊日期後，讓畫面自動捲動至行程頂部
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
 
